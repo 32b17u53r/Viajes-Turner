@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora los mejores destinos para tu escapada en furgón">
+  <title>Destinos - Viajes Turner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/destinos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__logo">
+        <i class="bx bxs-car"></i>
+        <span class="navbar__logo-text">VanLife</span>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="index.html" class="navbar__link">Inicio</a></li>
+        <li><a href="destinos.html" class="navbar__link active">Destinos</a></li>
+        <li><a href="comunidad.html" class="navbar__link">Comunidad</a></li>
+        <li><a href="guias.html" class="navbar__link">Guías</a></li>
+        <li><a href="contacto.html" class="navbar__link">Contacto</a></li>
+      </ul>
+      <button class="navbar__cta">Explorar</button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero__background">
+      <div class="hero__gradient-1"></div>
+      <div class="hero__gradient-2"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <i class="bx bxs-map"></i> Descubre Destinos
+      </div>
+      <h1 class="hero__title">
+        Explora los Mejores <span class="hero__highlight">Destinos de Argentina</span>
+      </h1>
+      <p class="hero__subtitle">Desde playas paradisíacas hasta montañas nevadas. Encuentra tu próximo destino perfecto</p>
+      <div class="hero__buttons">
+        <button class="btn btn--primary">Filtrar Destinos</button>
+        <button class="btn btn--secondary">Ver Mapa</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- FILTERS SECTION -->
+    <section class="filters-section">
+      <div class="filters-container">
+        <div class="filter-group">
+          <label for="region-filter">Región</label>
+          <select id="region-filter" class="filter-select">
+            <option value="all">Todas las regiones</option>
+            <option value="patagonia">Patagonia</option>
+            <option value="norte">Norte</option>
+            <option value="costa">Costa</option>
+            <option value="cordoba">Córdoba</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="type-filter">Tipo de Destino</label>
+          <select id="type-filter" class="filter-select">
+            <option value="all">Todos los tipos</option>
+            <option value="naturaleza">Naturaleza</option>
+            <option value="playa">Playa</option>
+            <option value="montaña">Montaña</option>
+            <option value="ciudad">Ciudad</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="difficulty-filter">Dificultad</label>
+          <select id="difficulty-filter" class="filter-select">
+            <option value="all">Todas</option>
+            <option value="facil">Fácil</option>
+            <option value="media">Media</option>
+            <option value="dificil">Difícil</option>
+          </select>
+        </div>
+        <button class="btn btn--filter">Resetear Filtros</button>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS GRID -->
+    <section class="destinations-section">
+      <div class="destinations-grid" id="destinationsGrid">
+        <!-- Los destinos se cargarán aquí con JavaScript -->
+      </div>
+    </section>
+
+    <!-- DESTINATION DETAIL MODAL -->
+    <div class="modal" id="destinationModal">
+      <div class="modal__content">
+        <button class="modal__close">
+          <i class="bx bx-x"></i>
+        </button>
+        <div class="modal__body" id="modalBody">
+          <!-- El contenido se cargará aquí -->
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section">
+      <div class="section__header">
+        <h2 class="section__title">¿Por qué elegir nuestros destinos?</h2>
+        <p class="section__subtitle">Experiencias únicas y bien planificadas</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <i class="bx bxs-star"></i>
+          </div>
+          <h3>Selección Premium</h3>
+          <p>Solo los mejores destinos verificados por nuestro equipo de expertos</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <i class="bx bxs-map-pin"></i>
+          </div>
+          <h3>Ubicaciones Estratégicas</h3>
+          <p>Todos nuestros destinos están optimizados para viajes en furgón</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <i class="bx bxs-info-circle"></i>
+          </div>
+          <h3>Información Detallada</h3>
+          <p>Acceso, facilidades, distancias y reseñas de otros viajeros</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <i class="bx bxs-camera"></i>
+          </div>
+          <h3>Galería de Fotos</h3>
+          <p>Inspírate con fotos reales de otros aventureros como tú</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta">
+      <div class="cta__content">
+        <h2>¿No encuentras lo que buscas?</h2>
+        <p>Sugiere un nuevo destino a nuestra comunidad</p>
+        <button class="btn btn--large">Sugerir Destino</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__column">
+        <h4><i class="bx bxs-car"></i> VanLife Adventures</h4>
+        <p>Tu plataforma de viajes en furgón desde 2024. Conectando aventureros con experiencias inolvidables</p>
+      </div>
+      <div class="footer__column">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="guias.html">Guías</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="#">Blog de Viajes</a></li>
+          <li><a href="#">Equipamiento</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Descargas</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Viajes Turner - VanLife Adventures. Todos los derechos reservados.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/destinos.js"></script>
+</body>
+</html>
