@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Viajes Turner - Tu plataforma completa de aventuras en furgón">
-  <title>Viajes Turner - Aventuras en Ruta</title>
+  <meta name="description" content="Descubre la experiencia perfecta de escapada en furgón">
+  <title>Viajes Turner - Aventuras en Furgón</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,13 +16,13 @@
   <nav class="navbar">
     <div class="navbar__container">
       <div class="navbar__logo">
-        <i class="bx bxs-car"></i>
+        <i class="bx bxs-car-crash"></i>
         <span class="navbar__logo-text">VanLife</span>
       </div>
       <ul class="navbar__menu">
         <li><a href="index.html" class="navbar__link active">Inicio</a></li>
-        <li><a href="rutas.html" class="navbar__link">Rutas</a></li>
-        <li><a href="equipamiento.html" class="navbar__link">Equipamiento</a></li>
+        <li><a href="destinos.html" class="navbar__link">Destinos</a></li>
+        <li><a href="guia.html" class="navbar__link">Guía de Viaje</a></li>
         <li><a href="comunidad.html" class="navbar__link">Comunidad</a></li>
         <li><a href="contacto.html" class="navbar__link">Contacto</a></li>
       </ul>
@@ -38,25 +38,23 @@
       <div class="hero__stars"></div>
     </div>
     <div class="hero__content">
-      <div class="hero__badge">
-        <i class="bx bxs-tent"></i> Aventura Completa 2026
-      </div>
+      <div class="hero__badge"><i class="bx bxs-map"></i> Aventura en Ruta 2026</div>
       <h1 class="hero__title">
-        Escapada de Fin de <span class="hero__highlight">Semana en Furgón</span>
+        Escapadas en <span class="hero__highlight">Furgón Campero</span>
       </h1>
-      <p class="hero__subtitle">Una ruta corta y cómoda para desconectar sin alejarte demasiado de casa</p>
+      <p class="hero__subtitle">Descubre libertad y aventura en cada kilómetro de camino</p>
       <div class="hero__buttons">
         <button class="btn btn--primary">Planificar Viaje</button>
         <button class="btn btn--secondary">Ver Rutas</button>
       </div>
       <div class="hero__stats">
         <div class="stat">
-          <span class="stat__number">48h</span>
-          <span class="stat__label">Duración</span>
+          <span class="stat__number">500+</span>
+          <span class="stat__label">Rutas Disponibles</span>
         </div>
         <div class="stat">
-          <span class="stat__number">200+</span>
-          <span class="stat__label">Destinos</span>
+          <span class="stat__number">10K+</span>
+          <span class="stat__label">Viajeros</span>
         </div>
         <div class="stat">
           <span class="stat__number">100%</span>
@@ -68,150 +66,122 @@
 
   <!-- MAIN CONTENT -->
   <main>
-    <!-- PASOS SECTION -->
-    <section class="services">
-      <div class="section__header">
-        <h2 class="section__title">Pasos para tu Escapada</h2>
-        <p class="section__subtitle">Organiza tu fin de semana perfecto en furgón</p>
+    <!-- SECCIONES RÁPIDAS -->
+    <section class="quick-sections">
+      <div class="quick-sections__container">
+        <a href="destinos.html" class="quick-card">
+          <i class="bx bxs-location-plus"></i>
+          <h3>Destinos</h3>
+          <p>Explora los mejores lugares</p>
+        </a>
+        <a href="guia.html" class="quick-card">
+          <i class="bx bxs-book-open"></i>
+          <h3>Guía de Viaje</h3>
+          <p>Consejos y recomendaciones</p>
+        </a>
+        <a href="comunidad.html" class="quick-card">
+          <i class="bx bxs-group"></i>
+          <h3>Comunidad</h3>
+          <p>Conecta con otros viajeros</p>
+        </a>
+        <a href="contacto.html" class="quick-card">
+          <i class="bx bxs-envelope"></i>
+          <h3>Contacto</h3>
+          <p>Ponte en contacto con nosotros</p>
+        </a>
       </div>
-      <div class="services__grid">
-        <article class="service-card">
-          <div class="service-card__icon">
-            <i class="bx bxs-map"></i>
+    </section>
+
+    <!-- RAZONES POR QUÉ ELEGIR VANLIFE -->
+    <section class="reasons">
+      <div class="section__header">
+        <h2 class="section__title">¿Por Qué Elegir VanLife?</h2>
+        <p class="section__subtitle">Descubre los beneficios de viajar en furgón</p>
+      </div>
+      <div class="reasons__grid">
+        <article class="reason-card">
+          <div class="reason-card__icon">
+            <i class="bx bxs-heart"></i>
           </div>
-          <h3 class="service-card__title">Destino Perfecto</h3>
-          <p class="service-card__description">Elige un parque nacional o reserva cercana para maximizar tiempo de descanso</p>
-          <ul class="service-card__list">
-            <li>Parques nacionales cercanos</li>
-            <li>Reservas naturales</li>
-            <li>Senderos accesibles</li>
-          </ul>
-          <a href="rutas.html" class="service-card__link">Explorar destinos →</a>
+          <h3 class="reason-card__title">Libertad Total</h3>
+          <p class="reason-card__description">Viaja a tu ritmo sin horarios ni reservas</p>
         </article>
 
-        <article class="service-card">
-          <div class="service-card__icon">
-            <i class="bx bxs-backpack"></i>
+        <article class="reason-card">
+          <div class="reason-card__icon">
+            <i class="bx bxs-wallet-alt"></i>
           </div>
-          <h3 class="service-card__title">Qué Empacar</h3>
-          <p class="service-card__description">Todo lo necesario para una escapada cómoda y sin complicaciones</p>
-          <ul class="service-card__list">
-            <li>Equipo de camping ligero</li>
-            <li>Mantas y sleeping bags</li>
-            <li>Alimentos fáciles de preparar</li>
-          </ul>
-          <a href="equipamiento.html" class="service-card__link">Ver checklist →</a>
+          <h3 class="reason-card__title">Presupuesto Flexible</h3>
+          <p class="reason-card__description">Controla tus gastos como nunca antes</p>
         </article>
 
-        <article class="service-card">
-          <div class="service-card__icon">
-            <i class="bx bxs-battery-charging"></i>
+        <article class="reason-card">
+          <div class="reason-card__icon">
+            <i class="bx bxs-tree"></i>
           </div>
-          <h3 class="service-card__title">Equipamiento Esencial</h3>
-          <p class="service-card__description">Todo para mantener la comodidad durante tu viaje</p>
-          <ul class="service-card__list">
-            <li>Luces y linternas LED</li>
-            <li>Cargadores portátiles</li>
-            <li>Botiquín de primeros auxilios</li>
-          </ul>
-          <a href="equipamiento.html" class="service-card__link">Ver equipos →</a>
+          <h3 class="reason-card__title">Naturaleza Pura</h3>
+          <p class="reason-card__description">Despierta con las mejores vistas</p>
         </article>
 
-        <article class="service-card">
-          <div class="service-card__icon">
-            <i class="bx bxs-music"></i>
+        <article class="reason-card">
+          <div class="reason-card__icon">
+            <i class="bx bxs-user-check"></i>
           </div>
-          <h3 class="service-card__title">Entretenimiento</h3>
-          <p class="service-card__description">Disfruta del camino y desconéctate de la rutina diaria</p>
-          <ul class="service-card__list">
-            <li>Playlists para la ruta</li>
-            <li>Juegos de mesa rápidos</li>
-            <li>Libros y revistas</li>
-          </ul>
-          <a href="comunidad.html" class="service-card__link">Crear playlist →</a>
+          <h3 class="reason-card__title">Comunidad Activa</h3>
+          <p class="reason-card__description">Conoce viajeros con tus mismos valores</p>
         </article>
 
-        <article class="service-card">
-          <div class="service-card__icon">
-            <i class="bx bxs-car"></i>
+        <article class="reason-card">
+          <div class="reason-card__icon">
+            <i class="bx bxs-map-alt"></i>
           </div>
-          <h3 class="service-card__title">Ventajas del Furgón</h3>
-          <p class="service-card__description">Máxima comodidad y flexibilidad para tus escapadas</p>
-          <ul class="service-card__list">
-            <li>Lleva más comodidad</li>
-            <li>Flexibilidad en ruta</li>
-            <li>Cambio de planes sobre la marcha</li>
-          </ul>
-          <a href="rutas.html" class="service-card__link">Conocer más →</a>
+          <h3 class="reason-card__title">Exploración Infinita</h3>
+          <p class="reason-card__description">Miles de destinos esperándote</p>
         </article>
 
-        <article class="service-card">
-          <div class="service-card__icon">
-            <i class="bx bxs-route"></i>
+        <article class="reason-card">
+          <div class="reason-card__icon">
+            <i class="bx bxs-camera"></i>
           </div>
-          <h3 class="service-card__title">Itinerario Sugerido</h3>
-          <p class="service-card__description">Aprovecha cada momento de tu fin de semana</p>
-          <ul class="service-card__list">
-            <li>Viernes: Llega por la noche</li>
-            <li>Sábado: Disfruta completo</li>
-            <li>Domingo: Regresa relajado</li>
-          </ul>
-          <a href="rutas.html" class="service-card__link">Ver itinerarios →</a>
+          <h3 class="reason-card__title">Momentos Únicos</h3>
+          <p class="reason-card__description">Crea recuerdos inolvidables</p>
         </article>
       </div>
     </section>
 
-    <!-- TIMELINE SECTION -->
-    <section class="features">
-      <div class="features__container">
-        <div class="features__content">
-          <h2 class="section__title">Tu Viaje Perfecto</h2>
-          <ul class="features__list">
-            <li class="feature-item">
-              <span class="feature-item__check">
-                <i class="bx bxs-check-circle"></i>
-              </span>
-              <div>
-                <h4>Viernes por la Noche</h4>
-                <p>Sal del trabajo, carga el furgón y disfruta del camino hacia tu destino elegido</p>
-              </div>
-            </li>
-            <li class="feature-item">
-              <span class="feature-item__check">
-                <i class="bx bxs-check-circle"></i>
-              </span>
-              <div>
-                <h4>Sábado Completo</h4>
-                <p>Explora, relájate, camina, disfruta de la naturaleza y nuevos horizontes</p>
-              </div>
-            </li>
-            <li class="feature-item">
-              <span class="feature-item__check">
-                <i class="bx bxs-check-circle"></i>
-              </span>
-              <div>
-                <h4>Domingo Tranquilo</h4>
-                <p>Regresa con tiempo para relajarte antes de la semana laboral</p>
-              </div>
-            </li>
-            <li class="feature-item">
-              <span class="feature-item__check">
-                <i class="bx bxs-check-circle"></i>
-              </span>
-              <div>
-                <h4>Recuerdos Inolvidables</h4>
-                <p>Crea conexiones y experiencias que perdurarán toda la vida</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="features__visual">
-          <div class="features__image-placeholder">
-            <div class="feature-box feature-box--1">Naturaleza</div>
-            <div class="feature-box feature-box--2">Libertad</div>
-            <div class="feature-box feature-box--3">Aventura</div>
+    <!-- FEATURED ROUTES -->
+    <section class="featured">
+      <div class="section__header">
+        <h2 class="section__title">Rutas Destacadas</h2>
+        <p class="section__subtitle">Nuestras rutas más populares</p>
+      </div>
+      <div class="featured__grid">
+        <article class="featured-card">
+          <div class="featured-card__image featured-card__image--patagonia"></div>
+          <div class="featured-card__content">
+            <h3>Patagonia</h3>
+            <p>Glaciares, montañas y paisajes de ensueño</p>
+            <a href="destinos.html" class="featured-card__link">Explorar <i class="bx bx-right-arrow-alt"></i></a>
           </div>
-        </div>
+        </article>
+
+        <article class="featured-card">
+          <div class="featured-card__image featured-card__image--norte"></div>
+          <div class="featured-card__content">
+            <h3>Norte Argentino</h3>
+            <p>Cultura, desiertos y colores vibrantes</p>
+            <a href="destinos.html" class="featured-card__link">Explorar <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </article>
+
+        <article class="featured-card">
+          <div class="featured-card__image featured-card__image--costa"></div>
+          <div class="featured-card__content">
+            <h3>Costa Atlántica</h3>
+            <p>Playas, olas y aire marino puro</p>
+            <a href="destinos.html" class="featured-card__link">Explorar <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -230,7 +200,7 @@
             <i class="bx bxs-star"></i>
             <i class="bx bxs-star"></i>
           </div>
-          <p class="testimonial-card__text">"La mejor decisión fue comprar ese furgón. Cada fin de semana es una nueva aventura y podemos desconectar completamente de la ciudad"</p>
+          <p class="testimonial-card__text">"La mejor decisión fue comprar ese furgón. Cada fin de semana es una nueva aventura"</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">MT</div>
             <div>
@@ -248,7 +218,7 @@
             <i class="bx bxs-star"></i>
             <i class="bx bxs-star"></i>
           </div>
-          <p class="testimonial-card__text">"Con dos días podemos alcanzar lugares increíbles. La flexibilidad del furgón nos permite cambiar de plan si encontramos algo mejor en el camino"</p>
+          <p class="testimonial-card__text">"La flexibilidad del furgón nos permite cambiar de plan si encontramos algo mejor"</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">JC</div>
             <div>
@@ -266,11 +236,11 @@
             <i class="bx bxs-star"></i>
             <i class="bx bxs-star"></i>
           </div>
-          <p class="testimonial-card__text">"Es perfecto para familias. Los niños disfrutan más viajando en furgón que en hotel. ¡Vamos cada fin de semana!"</p>
+          <p class="testimonial-card__text">"Es perfecto para familias. Los niños disfrutan más viajando en furgón que en hotel"</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">SP</div>
             <div>
-              <p class="testimonial-card__name">Sofia y Pablo</p>
+              <p class="testimonial-card__name">Sofía y Pablo</p>
               <p class="testimonial-card__role">Familia Viajera</p>
             </div>
           </div>
@@ -292,27 +262,25 @@
   <footer class="footer">
     <div class="footer__content">
       <div class="footer__column">
-        <h4>
-          <i class="bx bxs-car"></i> VanLife Adventures
-        </h4>
+        <h4><i class="bx bxs-car-crash"></i> VanLife Adventures</h4>
         <p>Tu plataforma de viajes en furgón desde 2024. Conectando aventureros con experiencias inolvidables</p>
       </div>
       <div class="footer__column">
-        <h4>Rutas</h4>
+        <h4>Explorar</h4>
         <ul>
-          <li><a href="rutas.html">Patagonia</a></li>
-          <li><a href="rutas.html">Norte</a></li>
-          <li><a href="rutas.html">Costa</a></li>
-          <li><a href="rutas.html">Córdoba</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="guia.html">Guía de Viaje</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
       <div class="footer__column">
         <h4>Recursos</h4>
         <ul>
           <li><a href="#">Blog de Viajes</a></li>
-          <li><a href="comunidad.html">Comunidad</a></li>
-          <li><a href="equipamiento.html">Equipamiento</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#">Consejos</a></li>
+          <li><a href="#">Equipamiento</a></li>
+          <li><a href="#">Galería</a></li>
         </ul>
       </div>
       <div class="footer__column">
@@ -326,11 +294,11 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p>&copy; 2026 DuoBinario - VanLife Adventures. Todos los derechos reservados.</p>
+      <p>&copy; 2026 Viajes Turner - VanLife Adventures. Todos los derechos reservados.</p>
       <div class="footer__socials">
         <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
         <a href="#" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
-        <a href="#" aria-label="Comunidad"><i class="bx bxs-group"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
       </div>
     </div>
   </footer>
